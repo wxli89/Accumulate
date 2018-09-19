@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Network;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -11,7 +12,7 @@ namespace DAL
 {
     public class SqlHelper
     {
-        private static readonly string constring = ConfigurationManager.AppSettings["con"];
+        private static readonly string constring = ConfigRead.Read("con");
         public static void SqlBulkCopyInsert(string tableName, DataTable dt)
         {
             try
