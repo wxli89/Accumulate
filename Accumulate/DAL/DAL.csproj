@@ -51,6 +51,16 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AdminModel\AdminModel.csproj">
+      <Project>{d860e6c4-8ec8-4259-9569-092981f05b0b}</Project>
+      <Name>AdminModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDAL\IDAL.csproj">
+      <Project>{3d140291-9d69-4849-b5e0-2598e70d7155}</Project>
+      <Name>IDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

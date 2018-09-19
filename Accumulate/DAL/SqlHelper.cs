@@ -27,5 +27,11 @@ namespace DAL
             catch (Exception ex)
             { }
         }
+        public static IDbConnection GetConnection()
+        {
+            SqlConnection con = new SqlConnection(constring);
+            con.Open();
+            return con;
+        }
     }
 }
