@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Network", "Network\Network.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{094A8EB5-31A6-4AD6-B0FE-913523C792E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoyatAdmin", "JoyatAdmin\JoyatAdmin.csproj", "{B78E7C4F-6196-4802-BC24-E9DC039E9A27}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminModel", "AdminModel\AdminModel.csproj", "{D860E6C4-8EC8-4259-9569-092981F05B0B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDAL", "IDAL\IDAL.csproj", "{3D140291-9D69-4849-B5E0-2598E70D7155}"
@@ -25,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dataAccess", "dataAccess", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "model", "model", "{667D3F27-C1FC-4217-879F-8E402FED239A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoyatAdmin", "JoyatAdmin\JoyatAdmin.csproj", "{89B0E5BB-01B4-432F-AC4F-FA3CC34F16E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,10 +39,6 @@ Global
 		{094A8EB5-31A6-4AD6-B0FE-913523C792E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{094A8EB5-31A6-4AD6-B0FE-913523C792E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{094A8EB5-31A6-4AD6-B0FE-913523C792E0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B78E7C4F-6196-4802-BC24-E9DC039E9A27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B78E7C4F-6196-4802-BC24-E9DC039E9A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B78E7C4F-6196-4802-BC24-E9DC039E9A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B78E7C4F-6196-4802-BC24-E9DC039E9A27}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D860E6C4-8EC8-4259-9569-092981F05B0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D860E6C4-8EC8-4259-9569-092981F05B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D860E6C4-8EC8-4259-9569-092981F05B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -63,6 +59,10 @@ Global
 		{584163EF-C4B1-4A6B-9601-7BD32D7445AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{584163EF-C4B1-4A6B-9601-7BD32D7445AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{584163EF-C4B1-4A6B-9601-7BD32D7445AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89B0E5BB-01B4-432F-AC4F-FA3CC34F16E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89B0E5BB-01B4-432F-AC4F-FA3CC34F16E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89B0E5BB-01B4-432F-AC4F-FA3CC34F16E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89B0E5BB-01B4-432F-AC4F-FA3CC34F16E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
