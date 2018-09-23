@@ -3,10 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>   
+    <title>@ViewBag.Title</title>
+    @RenderSection("styles", required: false)
 </head>
 <body>
-    @RenderBody()        
+    @RenderBody()
     @RenderSection("scripts", required: false)
 </body>
 </html>
