@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Comm;
 
 namespace AdminModel
 {
     public class Menu
     {
+        [Identity]
         public int ID{ get;set;}
         public string MenuName{ get;set;}
         public int? ParentID{ get;set;}

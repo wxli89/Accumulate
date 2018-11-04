@@ -3,13 +3,168 @@
 }
 @section styles{
     <style>
-        
+        .main {
+            margin: 0;
+            padding: 0;
+        }
 
-    </style>    
+        .sidebar {
+            position: relative;
+            float: left;
+            width: 190px;
+        }
+
+        .nav-list {
+            margin: 0;
+            padding: 0;
+            height: 600px;
+            background: #f1f1f1;
+        }
+
+        .nav-list-wathet > li {
+            background: #f1f1f1;
+        }
+
+        .nav-list > li:first-child {
+            border-top: 1px solid #cce2ed;
+        }
+
+        .nav-list > li {
+            display: block;
+            border-bottom: 1px solid #cce2ed;
+        }
+
+            .nav-list > li > a > span {
+                position: absolute;
+                right: 12px;
+                top: 12px;
+            }
+
+        .nav-list-child {
+            margin-left: 10px;
+        }
+
+        .sideright {
+            margin-left: 190px;
+            padding-right: 5px;
+        }
+
+        .tabs {
+            list-style: none;
+            padding: 0;
+            height: 41.23px;
+            line-height: 41.23px;
+        }
+
+            .tabs a {
+                text-decoration: none;
+            }
+
+            .tabs > li {
+                position: relative;
+                float: left;
+                margin-right: 15px;
+                padding: 0 10px 0 10px;
+                border-left: 1px solid #cce2ed;
+                border-right: 1px solid #cce2ed;
+            }
+
+                .tabs > li:first-child {
+                    margin-left: 10px;
+                }
+
+                .tabs > li:hover {
+                    background-color: #cce2ed;
+                }
+
+        .tab-selected {
+            background-color: #cce2ed;
+        }
+
+        .content {
+            margin-left: 10px;
+        }
+    </style>
 }
+@model List<Menu>
+<div class="main">
+    <div class="sidebar">
+        <ul class="nav nav-list nav-list-wathet">
+            @foreach (var item in Model.Where(p => p.ParentID == 0))
+            {
+                <li>
+                    <a href="javascript:;" data-url="@item.Link" data-id="@item.ID">
+                        @item.MenuName
+                        @{var childcount = Model.Where(p => p.ParentID == item.ID).Count();}
+                        @if (childcount > 0)
+                        {
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        }
+                    </a>
+                    @if (childcount > 0)
+                    {
+                        <ul class="nav nav-list-child">
+                            @foreach (var child in Model.Where(p => p.ParentID == item.ID))
+                            {
+                                <li>
+                                    <a href="javascript:;" data-url="@child.Link" data-id="@child.ID">@child.MenuName</a>
+                                </li>
+                            }
+                        </ul>
+                    }
+                </li>
+            }
+        </ul>
+    </div>
 
+    <div class="sideright">
+        <div class="page-tabs">
+            <ul class="tabs">
+                <li class="tab-selected">
+                    <a href="javascript:;">
+                        首页
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
 
+        </div>
+    </div>
+</div>
 
 @section scripts{
-    <script src="~/Scripts/jquery-1.8.2.js"></script>
+
+    <script>
+        $(function () {
+
+        });
+
+        $("body").on("click", ".nav-list>li>a:not(:only-child)", function () {
+            var child = $(this).siblings(".nav-list-child");
+            var status = child.css("display");
+            if (status == "block")
+                child.css("display", "none");
+            else
+                child.css("display", "block");
+        })
+
+        $("body").on("click", ".nav-list li>a:only-child", function () {
+            var menuid = $(this).data("id");
+            if ($("#tab" + menuid).length) return;
+
+            var target = $(".page-tabs .tabs");
+            var tab_text = $(this).text();
+            var html = '<li>\
+                            <a href="javascript:;" id="tab' + menuid + '">' + tab_text + '</a>\
+                        </li>'
+            target.append(html);
+
+            var url = $(this).attr("data-url");
+            var iframe = "<iframe frameborder='0' style='width:100%;' onload='this.height = this.contentWindow.document.documentElement.scrollHeight' id='iframe" + menuid + "' src='" + url + "'></iframe>";
+
+            $(".content").append(iframe);
+
+        })
+    </script>
 }

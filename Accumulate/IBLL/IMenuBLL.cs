@@ -10,5 +10,6 @@ namespace IBLL
     public interface IMenuBLL
     {
         List<Menu> GetMenus();
+        int AddMenu(Menu menu);
     }
 }

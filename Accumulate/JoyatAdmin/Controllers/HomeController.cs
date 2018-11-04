@@ -1,4 +1,5 @@
-﻿using IBLL;
+﻿using AdminModel;
+using IBLL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace JoyatAdmin.Controllers
         }
         public ActionResult Index()
         {
-            var list = MenuBLL.GetMenus();
+            var list = MenuBLL.GetMenus().Where(p => p.MenuStatus == 1).ToList<Menu>();
             return View(list);
         }
 

@@ -20,5 +20,9 @@ namespace BLL
         {
             return MenuDAL.GetMenus();
         }
+        public int AddMenu(Menu menu)
+        {
+            return MenuDAL.AddMenu(menu);
+        }
     }
 }

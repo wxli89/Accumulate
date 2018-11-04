@@ -18,7 +18,7 @@ namespace JoyatAdmin
             //注册Controller
             builder.RegisterControllers(typeof(AutofacConfig).Assembly);
 
-            var business = ConfigRead.Read("business").Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+            var business = ConfigRead.Read("register").Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
             var assemblys = business.Select(b => Assembly.Load(b)).ToArray();
             builder.RegisterAssemblyTypes(assemblys).AsImplementedInterfaces();
 

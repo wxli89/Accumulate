@@ -10,5 +10,6 @@ namespace IDAL
     public interface IMenuDAL
     {
         List<Menu> GetMenus();
+        int AddMenu(Menu menu);
     }
 }

@@ -13,10 +13,18 @@ namespace DAL
     {
         public List<Menu> GetMenus()
         {
-            string sql = "SELECT MenuName,ParentID,Link FROM [dbo].[Menu] WHERE MenuStatus = 1 ORDER BY Sort ";
+            string sql = @"SELECT ID,MenuName,ParentID,Link,CreateTime,UpdateTime,Sort,MenuStatus,
+                        Remark FROM [dbo].[Menu] ORDER BY Sort ";
             using (var con = SqlHelper.GetConnection())
             {
                 return con.Query<Menu>(sql).ToList();
+            }
+        }
+        public int AddMenu(Menu menu)
+        {
+            using (var con = SqlHelper.GetConnection())
+            {
+                return con.Insert(menu);
             }
         }
     }
