@@ -47,6 +47,10 @@
       <Project>{d860e6c4-8ec8-4259-9569-092981f05b0b}</Project>
       <Name>AdminModel</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Comm\Comm.csproj">
+      <Project>{28c4f94b-480e-47d0-bd3c-1c8011192f2f}</Project>
+      <Name>Comm</Name>
+    </ProjectReference>
     <ProjectReference Include="..\IBLL\IBLL.csproj">
       <Project>{584163ef-c4b1-4a6b-9601-7bd32d7445ac}</Project>
       <Name>IBLL</Name>

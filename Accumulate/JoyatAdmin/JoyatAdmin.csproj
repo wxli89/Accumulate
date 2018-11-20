@@ -155,6 +155,8 @@
     <Content Include="Content\bootstrap-3.3.7-dist\js\bootstrap.js" />
     <Content Include="Content\bootstrap-3.3.7-dist\js\bootstrap.min.js" />
     <Content Include="Content\bootstrap-3.3.7-dist\js\npm.js" />
+    <Content Include="Content\sadmin\sadmin.css" />
+    <Content Include="Content\sadmin\sadmin.js" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery.js" />
     <Content Include="Scripts\jquery.min.js" />
@@ -174,6 +176,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\css\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -187,6 +190,10 @@
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{592765ad-681e-4166-bd9d-d3131d92d51b}</Project>
       <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Comm\Comm.csproj">
+      <Project>{28c4f94b-480e-47d0-bd3c-1c8011192f2f}</Project>
+      <Name>Comm</Name>
     </ProjectReference>
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{094a8eb5-31a6-4ad6-b0fe-913523c792e0}</Project>
@@ -216,7 +223,7 @@
     <Content Include="Content\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff2" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\System\Index.cshtml" />
+    <Content Include="Views\System\Menu.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
