@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Network", "Network\Network.csproj", "{35E92074-A0CF-44F5-97B7-5878B79084F2}"
 EndProject
@@ -10,8 +10,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminModel", "AdminModel\AdminModel.csproj", "{D860E6C4-8EC8-4259-9569-092981F05B0B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDAL", "IDAL\IDAL.csproj", "{3D140291-9D69-4849-B5E0-2598E70D7155}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "z_cj", "z_cj\z_cj.csproj", "{35AE9C17-19FA-44A5-8029-D81D20FACE36}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{592765AD-681E-4166-BD9D-D3131D92D51B}"
 EndProject
@@ -51,10 +49,6 @@ Global
 		{3D140291-9D69-4849-B5E0-2598E70D7155}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D140291-9D69-4849-B5E0-2598E70D7155}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D140291-9D69-4849-B5E0-2598E70D7155}.Release|Any CPU.Build.0 = Release|Any CPU
-		{35AE9C17-19FA-44A5-8029-D81D20FACE36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{35AE9C17-19FA-44A5-8029-D81D20FACE36}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{35AE9C17-19FA-44A5-8029-D81D20FACE36}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{35AE9C17-19FA-44A5-8029-D81D20FACE36}.Release|Any CPU.Build.0 = Release|Any CPU
 		{592765AD-681E-4166-BD9D-D3131D92D51B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{592765AD-681E-4166-BD9D-D3131D92D51B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{592765AD-681E-4166-BD9D-D3131D92D51B}.Release|Any CPU.ActiveCfg = Release|Any CPU
