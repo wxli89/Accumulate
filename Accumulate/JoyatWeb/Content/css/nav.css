@@ -1,0 +1,15 @@
+﻿.topNav {
+    margin: 5px 15px 5px 15px;
+}
+
+.thumbnail .caption {
+    padding: 0 9px 0 0;
+}
+
+.caption h5 {
+    text-align: center;
+}
+
+.caption p {
+    text-align: right;
+}
