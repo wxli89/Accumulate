@@ -49,6 +49,11 @@ namespace DAL
             string sql = CreateInsert(t);
             return con.Execute(sql, t);
         }
+        public static int InsertList<T,C>(this IDbConnection con, T t,C c)
+        {
+            string sql = CreateInsert(c);
+            return con.Execute(sql, t);
+        }
         public static PageModel<T> Paging<T>(this IDbConnection con, string TableName, int PageSize, int PageIndex, string OrderBy, string Where)
         {
             string sql = CreatePaging(TableName, PageSize, PageIndex, OrderBy, Where);

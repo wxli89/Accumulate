@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountDAL.cs" />
+    <Compile Include="IsReadDAL.cs" />
+    <Compile Include="JokeDAL.cs" />
     <Compile Include="MenuDAL.cs" />
     <Compile Include="SqlHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

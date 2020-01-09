@@ -39,6 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IAccountDAL.cs" />
+    <Compile Include="IIsReadDAL.cs" />
+    <Compile Include="IJokeDAL.cs" />
     <Compile Include="IMenuDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

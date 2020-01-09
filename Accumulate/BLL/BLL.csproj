@@ -39,6 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountBLL.cs" />
+    <Compile Include="IsReadBLL.cs" />
+    <Compile Include="JokeBLL.cs" />
     <Compile Include="MenuBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

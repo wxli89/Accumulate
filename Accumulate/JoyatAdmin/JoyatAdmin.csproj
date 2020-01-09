@@ -159,8 +159,6 @@
     <Content Include="Content\sadmin\sadmin.css" />
     <Content Include="Content\sadmin\sadmin.js" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\jquery.js" />
-    <Content Include="Scripts\jquery.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

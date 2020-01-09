@@ -39,6 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IAccountBLL.cs" />
+    <Compile Include="IIsReadBLL.cs" />
+    <Compile Include="IJokeBLL.cs" />
     <Compile Include="IMenuBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
