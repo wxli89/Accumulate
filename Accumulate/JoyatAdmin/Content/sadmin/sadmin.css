@@ -1,0 +1,96 @@
+﻿.main {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: relative;
+    float: left;
+    width: 190px;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    background: #f1f1f1;
+}
+
+.nav-list-wathet > li {
+    background: #f1f1f1;
+}
+
+.nav-list > li:first-child {
+    border-top: 1px solid #cce2ed;
+}
+
+.nav-list > li {
+    display: block;
+    border-bottom: 1px solid #cce2ed;
+}
+
+    .nav-list > li > a > span {
+        position: absolute;
+        right: 12px;
+        top: 12px;
+    }
+
+.nav-list-child {
+    margin-left: 10px;
+}
+
+.sideright {
+    margin-left: 190px;
+    padding-right: 5px;
+}
+
+.tabs {
+    list-style: none;
+    padding: 0;
+    height: 41.23px;
+    line-height: 41.23px;
+}
+
+    .tabs a {
+        text-decoration: none;
+    }
+
+    .tabs > li {
+        position: relative;
+        float: left;
+        margin-right: 15px;
+        padding: 0 10px 0 10px;
+        border-left: 1px solid #cce2ed;
+        border-right: 1px solid #cce2ed;
+    }
+
+        .tabs > li:first-child {
+            margin-left: 10px;
+        }
+
+        .tabs > li:hover {
+            background-color: #cce2ed;
+        }
+
+.tab-selected {
+    background-color: #cce2ed;
+}
+
+.tab-close {
+    position: absolute;
+    line-height: 7px;
+    top: 3px;
+    right: 3px;
+    font-size: 18px;
+    color: #808080;
+    cursor: pointer;
+    display: none;
+}
+
+    .tab-close:hover {
+        color: #f1f1f1;
+    }
+
+    .tab-close:active {
+        color: red;
+    }
